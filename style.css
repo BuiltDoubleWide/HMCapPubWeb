@@ -1,0 +1,52 @@
+.topnav {
+    position: relative;
+    background-color: #753A17;
+    overflow: hidden;
+    
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav-centered a {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.topnav a:hover {
+    background-color: #CEAA8E;
+    color: black;
+}
+
+.topnav-right {
+    float: right;
+}
+
+body {
+    background-color: #C27230;
+}
+
+.picture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    height: 20%;
+}
+
+.HomeDes {
+    margin: auto;
+    background-image: url(./imgs/packinbackground.jpg);
+    text-align: center;
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
