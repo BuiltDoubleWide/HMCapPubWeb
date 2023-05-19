@@ -50,3 +50,21 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.aboutDes {
+    margin: auto;
+    background-image: url(./imgs/packinbackground.jpg);
+    text-align: center;
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.submission {
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    height: 100%;
+
+}
