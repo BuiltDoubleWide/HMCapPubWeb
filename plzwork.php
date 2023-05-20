@@ -5,7 +5,13 @@ $email = $_POST['email'];
 $phoneNum = $_POST['phoneNum'];
 $contactReason = $_POST['contactReason'];
 
-$connect = new mysqli('192.168.18.5', 'SA', 'HMCap23!');
+
+$host = "192.168.18.5"
+$user = "SA"
+$pass = 'HMCap23!'
+$db = 'CustomerInfo'
+
+$connect = new mysqli($host, $user, $pass, $db);
 if ($connect->connect_error){
     die('Connection Failed: '.$connect->connect_error);
 } else{
