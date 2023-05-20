@@ -6,7 +6,7 @@ $phoneNum = $_POST['phoneNum'];
 $contactReason = $_POST['contactReason'];
 
 
-$host = "192.168.18.5";
+$host = "192.168.18.5:3306";
 $user = "mysql";
 $pass = 'HMCap23!';
 $db = 'CustomerInfo';
