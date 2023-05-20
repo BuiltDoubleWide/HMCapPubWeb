@@ -43,7 +43,7 @@ body {
 
 .HomeDes {
     margin: auto;
-    background-image: url(./imgs/packinbackground.jpg);
+    background-image: url(packinbackground.jpg);
     text-align: center;
     width: 50%;
     height: 100%;
@@ -53,7 +53,7 @@ body {
 
 .aboutDes {
     margin: auto;
-    background-image: url(./imgs/packinbackground.jpg);
+    background-image: url(packinbackground.jpg);
     text-align: center;
     width: 50%;
     height: 100%;
