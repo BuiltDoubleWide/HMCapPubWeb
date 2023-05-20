@@ -1,19 +1,15 @@
-<?php
-$fname = $_POST['fname'];
-$lname = $_POST['lname'];
-$email = $_POST['email'];
-$phoneNum = $_POST['phoneNum'];
-$contactReason = $_POST['contactReason'];
 
-$connect = new mysqli('192.168.18.5', 'SA', 'HMCap23!', 'CustomerInfo');
-if ($connect->connection_error){
-    die('Connection Failed: '.$connect->connection_error);
-} else{
-    $stmt = $connect->prepare("Inert into Customers(fname, lname, email, phone, contactReason) values (?, ?, ?, ?, ?)");
-    $stmt->bind_param("sssss", $fname, $lname, $email, $phoneNum, $contactReason);
-    $stmt->execute();
-    echo "Maybe worked"
-    $stmt->close();
-    $connect->close();
+<?php
+$servername = "192.168.18.5";
+$username = "SA";
+$password = "HMCap23!";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password);
+
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
 }
+echo "Connected successfully";
 ?>
