@@ -8,7 +8,7 @@ $pass = 'HMCap23!';
 $db = 'CustomerInfo';
 
 $connect = mysqli_connect($host, $user, $pass, $db);
-if ($connect->connect_error){
+if ($connect.mysqli_connect_error()){
     die('Connection Failed: '.$connect->connect_error);
 } else{
     $fname = $_POST['fname'];
