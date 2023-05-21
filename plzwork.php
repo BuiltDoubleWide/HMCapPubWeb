@@ -23,10 +23,7 @@ $usr = 'root';
 $pass = '';
 $db = 'CustomerInfo';
 
-$conn = mysqli_connect(hostname: $host,
-                       username: $usr,
-                       password: $pass,
-                       database: $db);
+$conn = mysqli_connect($host, $usr, $pass, $db);
 
 if (mysqli_connect_errno()){
     die("Connection Error: " . mysqli_connect_errno());
