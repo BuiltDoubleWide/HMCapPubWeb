@@ -7,9 +7,9 @@ $user = "root";
 $pass = '';
 $db = 'CustomerInfo';
 
-$connect = new mysqli($host, $user, $pass, $db);
-if ($connect->connect_error){
-    die('Connection Failed: '.$connect->connect_error);
+$conn = new mysqli($host, $user, $pass, $db);
+if ($conn->connect_error){
+    die('Connection Failed: '.$conn->connect_error);
 } else{
     $fname = $_POST['fname'];
     $lname = $_POST['lname'];
@@ -22,6 +22,6 @@ if ($connect->connect_error){
     $stmt->execute();
     echo "Maybe worked";
     $stmt->close();
-    $connect->close();
+    $conn->close();
 }
 ?>
