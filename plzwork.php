@@ -17,7 +17,7 @@ if ($conn->connect_error){
     $phoneNum = $_POST['phoneNum'];
     $contactReason = $_POST['contactReason'];
 
-    $stmt = $connect->prepare("Inert into Customers(fname, lname, email, phone, contactReason) values (?, ?, ?, ?, ?)");
+    $stmt = $conn->prepare("Inert into Customers(fname, lname, email, phone, contactReason) values (?, ?, ?, ?, ?)");
     $stmt->bind_param("sssss", $fname, $lname, $email, $phoneNum, $contactReason);
     $stmt->execute();
     echo "Maybe worked";
