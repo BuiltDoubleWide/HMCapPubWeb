@@ -1,7 +1,7 @@
 <?php
     if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit'])){
 
-        $conn = mysqli_connect('192.168.18.5', 'SA', 'HMCap23!', 'CustomerInfo');
+        $conn = mysqli_connect('192.168.18.5', 'SA', 'HMCap23!', 'thisshouldnotwork');
         if(!$conn){
             echo 'Connection error: ' . mysqli_connect_error();
         }
