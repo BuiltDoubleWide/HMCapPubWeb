@@ -1,13 +1,7 @@
 <?php
 
 
-
-$host = "192.168.18.5";
-$user = "SA";
-$pass = 'HMCap23!';
-$db = 'CustomerInfo';
-
-$connect = mysqli_connect($host, $user, $pass, $db);
+$connect = mysqli_connect("192.168.18.5", 'root', '', 'CustomerInfo');
 if ($connect.mysqli_connect_error()){
     die('Connection Failed: '.$connect.mysqli_connect_error());
 } else{
