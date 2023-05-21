@@ -7,7 +7,7 @@ $user = "SA";
 $pass = 'HMCap23!';
 $db = 'CustomerInfo';
 
-$connect = new mysqli($host, $user, $pass, $db);
+$connect = mysqli_connect($host, $user, $pass, $db);
 if ($connect->connect_error){
     die('Connection Failed: '.$connect->connect_error);
 } else{
