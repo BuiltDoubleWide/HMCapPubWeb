@@ -1,7 +1,7 @@
 <?php
 
 
-    $conn = mysqli_connect('192.168.18.5', 'root', '', 'CustomerInfo') or die("Connection Failed: " .mysqli_connect_error());
+    $conn = mysqli_connect('192.168.18.5', 'root', '', 'CustomerInfo');
     if(isset($_POST['fname']) && isset($_POST['lname']) && isset($_POST['email']) && isset($__POST['phoneNum']) && isset($_POST['contactReason'])){
         $fname = $_POST['fname'];
         $lname = $_POST['lname'];
