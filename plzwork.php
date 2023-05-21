@@ -3,8 +3,8 @@
 
 
 $host = "192.168.18.5";
-$user = "SA";
-$pass = 'HMCap23!';
+$user = "root";
+$pass = '';
 $db = 'CustomerInfo';
 
 $connect = new mysqli($host, $user, $pass, $db);
